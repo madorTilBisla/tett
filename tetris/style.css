@@ -1,0 +1,257 @@
+@font-face{
+    src: url("VarelaRound-Regular.ttf");
+    font-family: VarelaRound;
+}
+
+* {
+    font-family: VarelaRound;
+    /* overflow: hidden; */
+}
+
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("Screen_new.png");
+    background-size: 100vw 117vh;
+    background-size: 100vw calc(var(--vh, 1vh) * 117);
+    background-repeat: no-repeat;
+}
+
+body { 
+    overflow: hidden;
+}
+
+.body2 {
+    overflow: hidden;
+}
+
+.life {
+    text-align: left;
+    direction: rtl;
+    position: relative;
+    left: 18vw;
+}
+
+.lifes {
+    margin-left : 5vw;
+    position: relative;
+    left: 63vw;
+}
+
+.heart {
+    height: 3vh;
+    height: calc(var(--vh, 1vh) * 3);
+    width: auto;
+}
+
+.erows {
+    height: auto;
+    width: 22vw;
+}
+
+.left-erow {
+    position: absolute;
+    top: 92vh;
+    top: calc(var(--vh, 1vh) * 92);
+    transform: rotate(180deg);
+}
+
+.right-erow {
+    position: absolute;
+    top: 92vh;
+    top: calc(var(--vh, 1vh) * 92);
+    left: 78vw;
+}
+
+.all-subject {
+    position: absolute;
+    top: 78vh;
+    top: calc(var(--vh, 1vh) * 78);
+    left: 4vw;
+    display: flex;
+    justify-content: center;
+}
+
+.catagories {
+    height: 10vh;
+    height: calc(var(--vh, 1vh) * 10);
+    width: 26vw;
+    padding-left: 4vw;
+}
+
+.catagor {
+    background-color: rgba(255, 255, 255, 0.671);
+    text-align: center;
+    position: relative;
+    right: 10vw;
+    bottom: 1vh;
+    bottom: calc(var(--vh, 1vh) * 1);
+    font-size: 4.1vw;
+    border-radius: 3vw;
+    padding: 1vw;
+    margin-top: 7vh;
+    margin-top: calc(var(--vh, 1vh) * 7);
+}
+
+.subj1{
+    width: 24vw;
+    height: auto;
+    margin-left: 15vw;
+}
+
+.subj2{
+    width: 20vw;
+    height: auto;
+    margin-left: 5vw;
+    padding-top: 2vh;
+    padding-top: calc(var(--vh, 1vh) * 2);
+}
+
+.subj3{
+    width: 20vw;
+    height: auto;
+    margin-left: 7vw;
+}
+
+.concept {
+    height: 16vh;
+    height: calc(var(--vh, 1vh) * 16);
+    width: 20vw;
+    position: absolute;
+    left: 35vw;
+    top: -7vh;
+    top: calc(var(--vh, 1vh) * -7);
+    animation: ShapeDown 6.5s linear infinite;
+    -webkit-animation: ShapeDown 6.5s linear infinite;;
+}
+
+.star {
+    width: 22vw;
+    position: absolute;
+    bottom: 10vh;
+    bottom: calc(var(--vh, 1vh) * 10);
+    left: 5vw;
+}
+
+.concept-text {
+    position: absolute;
+    bottom: 15vh;
+    bottom: calc(var(--vh, 1vh) * 15);
+    left: 8vw;
+    direction: rtl;
+    text-align: center;
+    font-size: 3.2vw;
+    font-weight: 700;
+}
+
+@keyframes ShapeDown {
+    0% {
+        top: -7vh;
+        top: calc(var(--vh, 1vh) * -7);
+    }
+    100% {
+        top: 76vh;
+        top: calc(var(--vh, 1vh) * 76);
+    }
+}
+
+@-webkit-keyframes ShapeDown {
+    0% {
+        top: -7vh;
+        top: calc(var(--vh, 1vh) * -7);
+    }
+    100% {
+        top: 76vh;
+        top: calc(var(--vh, 1vh) * 76);
+    }
+}
+
+.win {
+    height: 50vh;
+    height: calc(var(--vh, 1vh) * 50);
+    width: 80vw;
+    position: absolute;
+    top: 18vh;
+    top: calc(var(--vh, 1vh) * 18);
+    left: 3vw;
+    text-align: center;
+    direction: rtl;
+    background-color: rgba(18, 146, 18, 0.438);
+    border-style: solid;
+    border-radius: 3vw;
+    border-color: rgb(18, 146, 18);
+    font-size: 5vw;
+    font-weight: 545;
+    padding: 5vw;
+    opacity: 0;
+}
+
+.lose {
+    height: 50vh;
+    height: calc(var(--vh, 1vh) * 50);
+    width: 80vw;
+    position: absolute;
+    top: 18vh;
+    top: calc(var(--vh, 1vh) * 18);
+    left: 3vw;
+    text-align: center;
+    direction: rtl;
+    background-color: rgba(233, 126, 126, 0.63);
+    border-style: solid;
+    border-radius: 3vw;
+    border-color: rgb(214, 16, 16);
+    font-size: 5vw;
+    font-weight: 545;
+    padding: 5vw;
+    opacity: 0;
+}
+
+.try-again {
+    height: 10vh;
+    height: calc(var(--vh, 1vh) * 10);
+    width: 23vw;
+    font-size:4.5vw;
+    position: relative;
+    top: 35vh;
+    top: calc(var(--vh, 1vh) * 35);
+    left: 38vw; 
+    opacity: 0;
+    border-radius: 3vw;
+    border-style: none;
+    background-color: rgba(165, 150, 150, 0.959);
+}
+
+.start {
+    height: 117vh;
+    height: calc(var(--vh, 1vh) * 117);
+    width: 100vw;
+    background-image: url("screen.png");
+    background-size: 100vw 109vh;
+    background-size: 100vw calc(var(--vh, 1vh) * 109);
+    text-align: center;
+    direction: rtl;
+}
+
+.explanation {
+    position: absolute;
+    top: 20vh;
+    top: calc(var(--vh, 1vh) * 20);
+    right: 9vw;
+    font-size: 4.2vw;
+}
+
+.startGame {
+    height: 6vh;
+    height: calc(var(--vh, 1vh) * 6);
+    width: 22vw;
+    position: relative;
+    top: 60vh;
+    top: calc(var(--vh, 1vh) * 60);
+    font-size: 3.5vw;
+    margin-left: 2.5vh;
+    margin-left: calc(var(--vh, 1vh) * 2.5);
+    border-radius: 3vw;
+    border-style: none;
+    background-color: rgba(165, 150, 150, 0.719);
+}
